@@ -25,14 +25,20 @@ Dự án xây dựng website bán hàng nông sản (rau củ, trái cây, ngũ 
 
 ## 📸 Giao diện Demo
 
+### 👥 Giao diện người dùng (Home)
+
 | Trang chủ | Trang sản phẩm | Giỏ hàng |
 |----------|----------------|----------|
 | ![Home](https://github.com/user-attachments/assets/c8f5e70f-3988-447f-9eb2-b1b3bb86d09b) | ![Product](https://github.com/user-attachments/assets/1f1f1387-576e-47a4-9b95-4654ad631831) | ![Cart](https://github.com/user-attachments/assets/8a7da2e2-0e1a-4ee4-a2b2-40cde9864acc) |
 
-| Trang quản trị (Admin) | Quản lý đơn hàng |
-|------------------------|------------------|
-| ![Admin dashboard](https://github.com/user-attachments/assets/89b943cc-1e16-410b-9618-67e38e463ccb) | ![Order management](https://github.com/user-attachments/assets/22609908-a000-4638-a08a-11eac72c72ee) |
+### 🛠️ Giao diện quản trị (Admin)
 
-| Giao diện thanh toán | Mini game – Vòng quay may mắn |
-|----------------------|-------------------------------|
-| ![Checkout](https://github.com/user-attachments/assets/d61c254d-909e-4de9-a035-9bfdee02bfa4) | ![Lucky spin](https://github.com/user-attachments/assets/c0027f94-e45d-40f3-a9c4-defe7e41fad4) |
+| Tổng quan dashboard | Quản lý đơn hàng | Giao diện form quản lý |
+|---------------------|------------------|-------------------------|
+| ![Dashboard](https://github.com/user-attachments/assets/89b943cc-1e16-410b-9618-67e38e463ccb) | ![Orders](https://github.com/user-attachments/assets/22609908-a000-4638-a08a-11eac72c72ee) | ![Form](https://github.com/user-attachments/assets/d61c254d-909e-4de9-a035-9bfdee02bfa4) |
+
+### 🎮 Tính năng đặc biệt
+
+| Mini game – Vòng quay may mắn |
+|-------------------------------|
+| ![Lucky spin](https://github.com/user-attachments/assets/c0027f94-e45d-40f3-a9c4-defe7e41fad4) |
