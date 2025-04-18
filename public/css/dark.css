@@ -1,0 +1,134 @@
+/* Nút chuyển đổi – hộp chứa slider */
+#theme-toggle-button {
+    font-size: 8px;
+    position: relative;
+    display: inline-block;
+    width: 7em;
+    cursor: pointer;
+  }
+  
+  /* Ẩn checkbox mặc định của HTML */
+  #toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Áp dụng hiệu ứng chuyển động cho các thành phần bên trong SVG */
+  #container,
+  #button,
+  #sun,
+  #moon,
+  #cloud,
+  #stars {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+  }
+  
+  /* Khi checkbox được chọn: thay đổi màu nền của SVG (ví dụ chuyển sang giao diện "đêm") */
+  #toggle:checked + svg #container {
+    fill: #2b4360;
+  }
+  
+  /* Di chuyển nút bấm sang bên phải khi được chọn */
+  #toggle:checked + svg #button {
+    transform: translate(28px, 2.333px);
+  }
+  
+  /* Hiển thị/ẩn các biểu tượng mặt trời và mặt trăng */
+  #sun {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #sun {
+    opacity: 0;
+  }
+  
+  #moon {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #moon {
+    opacity: 1;
+  }
+  
+  /* Hiển thị/ẩn các thành phần nền khác */
+  #cloud {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #cloud {
+    opacity: 0;
+  }
+  
+  #stars {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #stars {
+    opacity: 1;
+  }
+  
+
+  /* Dark Mode: Màu sắc mới cho body và navbar */
+
+/* Body Dark Mode */
+body.dark-mode {
+    background-color: #393939; /* Màu nền body: đen xám tối */
+    color: #e0e0e0;            /* Màu chữ sáng */
+  }
+  
+  /* Navbar đầu tiên (navbar-first) Dark Mode */
+  body.dark-mode .navbar-first {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Gradient xanh đen hiện đại */
+  }
+  
+  body.dark-mode .navbar-first .nav-link {
+    color: #e0e0e0 !important; /* Màu chữ sáng cho các link */
+  }
+  
+  body.dark-mode .navbar-first .nav-link:hover {
+    color: #1abc9c; /* Màu điểm nhấn xanh ngọc khi hover */
+  }
+  
+  /* Navbar thứ hai (navbar-second) Dark Mode */
+  body.dark-mode .navbar-second {
+    background-color: #393939; /* Màu nền tối hơn cho navbar thứ hai */
+    color: #e0e0e0;
+    border-bottom: 2px solid #333; /* Viền dưới tối nhưng sắc nét */    
+  }
+  
+  body.dark-mode .navbar-second .nav-link {
+    color: #e0e0e0 !important;
+  }
+  
+  body.dark-mode .navbar-second .nav-link.active,
+  body.dark-mode .navbar-second .nav-link:hover {
+    color: #1abc9c !important; /* Giữ màu điểm nhấn xanh ngọc khi active hoặc hover */
+  }
+  
+  body.dark-mode .navbar-second .nav-link::after {
+    background-color: #1abc9c; /* Đường gạch chân theo màu xanh ngọc */
+  }
+  
+  /* Dropdown (metismenu) của Navbar thứ hai Dark Mode */
+  body.dark-mode .navbar-second .nav-item .metismenu {
+    background-color: #2a2a2a; /* Nền tối cho dropdown */
+    border: 2px solid #333;      /* Viền tối sắc nét */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow đậm hơn để tạo độ nổi */
+  }
+  
+  body.dark-mode .navbar-second .nav-item .metismenu li a {
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .navbar-second .nav-item .metismenu li a:hover {
+    background-color: #1abc9c;
+    color: #fff;
+  }
+  
+  body.dark-mode .navbar-second .nav-item .metismenu li ul {
+    background-color: #2a2a2a;
+  }
+  

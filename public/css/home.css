@@ -1,0 +1,195 @@
+/* Banner quảng cáo */
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out; /* Thêm hiệu ứng khi thay đổi vị trí của banner */
+}
+
+.banner-image {
+    height: 400px;
+    object-fit: cover;
+    opacity: 1; /* Khởi tạo trạng thái ảnh hiển thị */
+    transition: opacity 0.5s ease-in-out; /* Thêm hiệu ứng mờ dần khi chuyển ảnh */
+}
+
+/* Banner Content Styles */
+.banner-content {
+    top: 40%;
+    left: 63%;
+    opacity: 0;
+    transform: translate(-50%, 20%); /* Trượt xuống ban đầu */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Hiệu ứng mượt */
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: italic;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.banner-title .highlight {
+    color: #6fbf4b; /* Màu xanh lá cây */
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #6fbf4b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #5aa43c; /* Màu tối hơn khi hover */
+    transform: translateY(-3px); /* Di chuyển nhẹ lên trên */
+}
+
+/* Hiệu ứng trượt mượt mà */
+.banner-content.show {
+    opacity: 1; /* Hiển thị nội dung */
+    transform: translate(-50%, -50%); /* Trượt lên nhẹ */
+}
+
+.banner-arrow {
+    top: 45%;   
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng khi hover */
+}
+
+.banner-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1); /* Tăng kích thước khi hover */
+}
+
+.banner-arrow-left {
+    left: 10px;
+}
+
+.banner-arrow-right {
+    right: 10px;
+}
+
+    /* Card style */
+    .product-card {
+        border: 1px solid #ddd; /* Viền mỏng */
+        border-radius: 10px; /* Bo góc */
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        height: 340px;
+        background: #ffffff;
+    }
+
+    .product-card:hover {
+        border-color: #28a745; /* Viền xanh lá khi hover */
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Phần chứa ảnh */
+    .product-image-container {
+        position: relative;
+        overflow: hidden;
+        height: 220px;
+    }
+
+    .product-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .product-image-container:hover .product-image {
+        transform: scale(1.1);
+    }
+
+    /* Hover icons */
+    .hover-icons {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        bottom: -50px; /* Bắt đầu từ ngoài ảnh */
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        transition: visibility 0.3s, opacity 0.3s ease, bottom 0.3s ease;
+    }
+
+    .product-image-container:hover .hover-icons {
+        visibility: visible;
+        opacity: 1;
+        bottom: 10px; /* Trượt lên gần đáy ảnh */
+    }
+
+    .hover-icons .btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: #fff;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .hover-icons .btn:hover {
+        background-color: #28a745; /* Xanh lá khi hover */
+        border-color: #28a745;
+        transform: scale(1.1); /* Tăng nhẹ kích thước */
+    }
+
+    /* Card content */
+    .card-body {
+        padding: 15px;
+        height: 120px;
+        background: #f8f9fa;
+    }
+
+    .card-title-link {
+        text-decoration: none;
+        color: #343a40;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    .card-title-link:hover {
+        color: #28a745; /* Xanh lá khi hover */
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .my-4 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }

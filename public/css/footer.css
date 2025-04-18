@@ -1,0 +1,75 @@
+/* ================================
+   Footer Styles: Nền trắng - Chữ đen
+================================ */
+footer {
+    background-color: #ffffff; /* Nền trắng */
+    color: #000000;            /* Chữ đen */
+    padding: 60px 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Style tiêu đề cột */
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Reset danh sách và style liên kết */
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #007bff; /* Màu xanh nổi bật khi hover */
+    text-decoration: underline;
+}
+
+/* Style cho các icon mạng xã hội */
+footer .social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Style cho thẻ <hr> ngăn cách */
+footer hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Gạch ngăn cách màu xám nhẹ */
+    margin: 40px 0;
+}
+
+/* Responsive: căn chỉnh nội dung footer cho thiết bị nhỏ */
+@media (max-width: 767.98px) {
+    footer {
+        text-align: center;
+    }
+    footer .social-icons a {
+        margin-bottom: 10px;
+    }
+}
