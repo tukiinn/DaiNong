@@ -28,7 +28,7 @@ Dự án xây dựng website bán hàng nông sản (rau củ, trái cây, ngũ 
 
 ### 🏠 Giao diện người dùng
 
-| Trang chủ | Hiển thị sản phẩm | Giỏ hàng & Footer |
+| Trang chủ | Hiển thị sản phẩm | Bài viết & Footer |
 |-----------|-------------------|-------------------|
 | ![Home](https://github.com/user-attachments/assets/c8f5e70f-3988-447f-9eb2-b1b3bb86d09b) | ![Product](https://github.com/user-attachments/assets/1f1f1387-576e-47a4-9b95-4654ad631831) | ![Cart](https://github.com/user-attachments/assets/8a7da2e2-0e1a-4ee4-a2b2-40cde9864acc) |
 
