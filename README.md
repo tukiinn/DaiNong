@@ -17,8 +17,8 @@ Dự án xây dựng website bán hàng nông sản (rau củ, trái cây, ngũ 
 
 ## 🛠️ Công nghệ sử dụng
 
-- **Backend**: Laravel 11, MySQL
-- **Frontend**: Bootstrap 5, Font Awesome
+- **Backend**: Laravel, MySQL
+- **Frontend**: Bootstrap, Font Awesome, CKEditor, CropJS
 - **Realtime**: Laravel Broadcasting + Node.js + WebSocket
 - **Thanh toán**: VNPay, MoMo, PayPal
 - **Khác**: Dialogflow chatbot, API địa chỉ Việt Nam, ChartJS, export Excel
